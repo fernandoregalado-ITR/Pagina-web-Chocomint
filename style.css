@@ -1,0 +1,111 @@
+:root {
+    --mint: #a8e6cf;
+    --dark-chocolate: #3e2723;
+    --light-chocolate: #5d4037;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--dark-chocolate);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--dark-chocolate);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span { color: var(--mint); }
+
+nav ul { display: flex; list-style: none; }
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover { color: var(--mint); }
+
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&q=80') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 20px;
+}
+
+.btn {
+    background: var(--mint);
+    color: var(--dark-chocolate);
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px 5%;
+}
+
+.card {
+    border: 2px solid var(--mint);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.software-feature {
+    background: #f4f4f4;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.code-box {
+    background: #222;
+    color: #0f0;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--dark-chocolate);
+    color: var(--white);
+}
